@@ -1,0 +1,20 @@
+sudo chmod a+rw /dev/ttyUSB0
+https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/linux
+
+
+cd into the directory where the files are saved
+make clean
+make
+sudo make load
+sudo rmmod ch341 to uninstall the broken driver
+lsmod | grep ch34 to list what modules are currently installed
+Plug and unplug your CH340 device again on the USB port
+dmesg
+Expected output (should show "ch34x" now):
+[  xxx] ch34x ttyUSB0: ch34x converter now disconnected from ttyUSB0
+[  xxx] ch34x 3-2:1.0: device disconnected
+
+Depending on your root permissions, you may need to configure the serial port with the following two commands. Make sure to adjust the $username with respect to the user ID that is currently logged in.
+
+sudo usermod -a -G dialout $username 
+sudo chmod a+rw /dev/ttyUSB0

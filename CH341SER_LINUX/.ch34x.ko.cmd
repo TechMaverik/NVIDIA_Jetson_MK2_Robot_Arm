@@ -1,0 +1,1 @@
+cmd_/home/trenser_ai/Downloads/CH341SER_LINUX/ch34x.ko := ld -EL -r  -T ./scripts/module-common.lds -T ./arch/arm64/kernel/module.lds --build-id  -o /home/trenser_ai/Downloads/CH341SER_LINUX/ch34x.ko /home/trenser_ai/Downloads/CH341SER_LINUX/ch34x.o /home/trenser_ai/Downloads/CH341SER_LINUX/ch34x.mod.o ;  true
