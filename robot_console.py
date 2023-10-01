@@ -47,7 +47,7 @@ class RobotConsole:
         
         while True:            
             os.system('clear')
-            print("[**********TRENSER ROBOTIC ARM MK2 MODEL CONSOLE**********]")
+            print("[**********MK2 ROBOTIC ARM MODEL CONSOLE**********]")
             print("MENU:")
             print("1. Start Search and Sort Automation")            
             print("2. Caliberate Dynamic Camera")
